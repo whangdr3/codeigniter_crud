@@ -9,8 +9,15 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome_message');
 	}
 
-    public function users()
+
+    public function json()
     {
+        $this->load->database();
+        $status = $this->db->query("select * from usertable");
+        $data = $status->result_array();
+        $userdata['first'] = $data;
+        $userdata['second'] = $data;
+        echo json_encode($userdata);
         
-	}
+    }
 }

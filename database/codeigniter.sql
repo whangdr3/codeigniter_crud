@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 24, 2018 at 11:59 PM
+-- Generation Time: Oct 28, 2018 at 11:52 PM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.3
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `test`
+-- Database: `codeigniter`
 --
 
 -- --------------------------------------------------------
@@ -30,13 +30,14 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `usertable` (
   `id` int(11) NOT NULL,
-  `name` varchar(50) NOT NULL,
+  `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `sex` varchar(10) NOT NULL,
   `username` varchar(32) NOT NULL,
   `password` varchar(32) NOT NULL,
   `mobile` varchar(15) NOT NULL,
   `address` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
+  `designation` varchar(100) NOT NULL,
   `image` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -44,12 +45,10 @@ CREATE TABLE `usertable` (
 -- Dumping data for table `usertable`
 --
 
-INSERT INTO `usertable` (`id`, `name`, `sex`, `username`, `password`, `mobile`, `address`, `email`, `image`) VALUES
-(180, 'George Pi', 'male', '0', '0', '+1-58-58547-587', 'New York,CA-1205', 'george@gmail.co', ''),
-(181, 'Calvin Pr', 'male', '0', '0', '+1-5874-5226', 'California', 'calvin.pr@gmail.com', ''),
-(182, 'Albert Newsen', 'male', '', '', '+89-9856-55', 'Berlin, Germany', 'albert@gmail.com', ''),
-(183, 'Richmond Hel', 'male', '', '', '+87-85742-365', 'DC, Lane , WX/123', 'hel.343@hotmail.com', ''),
-(184, 'Rainok Heiden', 'male', '', '', '+1-85-6955', 'Los Angels, 12/ Newton Street', 'heiden@gmail.com', '');
+INSERT INTO `usertable` (`id`, `name`, `sex`, `username`, `password`, `mobile`, `address`, `email`, `designation`, `image`) VALUES
+(182, 'Albert Newsen', 'male', 'admin', '21232f297a57a5a743894a0e4a801fc3', '01558', 'Berlin, Germany', 'albert@gmail.com', 'admin', ''),
+(185, 'Alicia Kristens', 'Female', 'alicia453', '123', 'alicia453', 'New Jersys', 'alicia.pm@gmail.coms', 'Project Manager', 'dome.jpg'),
+(187, 'আরিফুল ইসলাম', 'male', 'ljflj', '0b59065eef37e8b3188a4e5a8b79e4be', 'ljlj', 'dlsfj', 'a@gja.co', '', '812014462j4d5h1.jpg');
 
 --
 -- Indexes for dumped tables
@@ -69,7 +68,7 @@ ALTER TABLE `usertable`
 -- AUTO_INCREMENT for table `usertable`
 --
 ALTER TABLE `usertable`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=185;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=188;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

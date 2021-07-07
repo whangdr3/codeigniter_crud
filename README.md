@@ -24,8 +24,33 @@ After that, you will get a zip file called codeigniter_crud-master.zip . After t
 Go to your C drive where you installed your local server. find out folder htdocs(for xampp) or www(for wamp) .
 Inside folder make a folder called codeignite. Inside codeigniter keep all files downloaded from repository. 
 
+## Installation by Composer
+<pre>
+composer create-project arif98741/codeigniter_crud
+</pre>
+
+
 Make a database called test(as your own wish. if you do that, then change the database connection credentials at application/config/database.php) in your phpmyadmin. import the database there(can be found at codeigniter_crud-master/database/test.sql)
 
 ## Login/Registration
-We Still have not included registration/login/forgot feature. This will be added soon
+Login Feature 
+Registration is done by administration by default after login
+
+## Login Details
+Username: admin <br>
+Password: admin
+
+
+
 	
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/arif98741/codeigniter_crud/badge.svg?style=beer-square)](https://beerpay.io/arif98741/codeigniter_crud)  [![Beerpay](https://beerpay.io/arif98741/codeigniter_crud/make-wish.svg?style=flat-square)](https://beerpay.io/arif98741/codeigniter_crud?focus=wish)
+
+<br><br>
+<img src="https://raw.githubusercontent.com/arif98741/codeigniter_crud/master/screenshots/login.JPG" width="100%"> 
+<br><br>
+
+<img src="https://raw.githubusercontent.com/arif98741/codeigniter_crud/master/screenshots/homepage.JPG" width="100%"> 
